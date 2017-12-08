@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="454455018879724">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="122560587208841" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="250829754137526" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="262553461027400">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="218326810982075" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="804539826258140" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="500919107603120">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="686106909200650" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="285388560541437" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247040811807861">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="875187665399626" type="playerRed_stand" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="379869448974808">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="987179804608516" type="playerRed_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="931875342728574" type="playerRed_stand">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="835394955790558">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="600526283424490" type="playerRed_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="660771515503661" type="playerRed_stand">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="180105101449066">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="709072399079032" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="746550015659082" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="625000638537744">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="877955852342302" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="428635430033838" type="playerRed_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="600354427738875">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="922307390867575" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="637371886996095" type="playerRed_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
